@@ -53,4 +53,48 @@ class mailHelper(object):
                 subject = re.search("Subject: (.*?)',",str(mailBody[1]).decode('utf-8'),re.S).group()
                 sender = re.search("'X-Sender: (.*?)',",str(mailBody[1]).decode('ust-8'),re.S).group()
                 command = {'subject': subject, 'sender': sender}
-                self.mccLog.mccWriteLog(u'抓取subject和发件人成功')
+                self.mccLog.mccWriteLog(u'抓取subject和发件人成功' )
+                return command
+            except Exception, e：
+                self.mccLog.mccError(u'抓取subject和发件人成功' + str(e))
+                return None
+
+        def configSlaveMail(self):
+            self.mccLog.mccWriteLog(u'开始配置发件箱')
+            try:
+                self.handle = smtplib.SMTP(self.smtphost, self.port)
+                self.handle.login(self.username, self.password)
+                self.maccLog.mccWriteLog(u'发件箱配置成功')
+            except Exception, e:
+                self.mccLog.mccError(u'发件箱配置失败' + str(e))
+                exit()
+
+        def sendMail(self, subject, receiver, body='Success'):
+            msg = MIMEText(body,'plain','utf-8')
+            msg['Subject'] = subject
+            msg['from'] = self.username
+            self.mccLog.mccWriteLog(u'开始发送邮件' + 'to' + receiver)
+            if receiver == 'Slave':
+                try:
+                    self.handle.sendmail(self.username, self.username, msg.as_string())
+                    self.mccLog.mccWriteLog(u'发送邮件成功')
+                    return True
+                except Exception, e:
+                    self.mccLog.mccWriteLog(u'发送邮件失败' + str(e))
+                    return False
+
+            elif receiver == 'Boss':
+                trv:
+                    self.handle.sendmail(self.username, self.bossMail, msg.as_string())
+                    self.mccLog.mccWriteLog(u'发送邮件成功')
+                except Exception,e:
+                    self.mccLog.mccError(u'发送邮件失败' + str(e))
+                    return False
+
+if __name__ == '__main__':
+    mail = mailHelper()
+    body = mail.acceptMail()
+    print body
+    print mail.analysisMail(body)
+    mail.sendMail('test','Boss')
+

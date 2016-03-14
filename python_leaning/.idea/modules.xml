@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/python_2/python_2.iml" filepath="$PROJECT_DIR$/python_2/python_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/python_leaning.iml" filepath="$PROJECT_DIR$/python_leaning.iml" />
     </modules>
   </component>
