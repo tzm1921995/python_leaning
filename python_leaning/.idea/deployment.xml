@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Remote SFTP(5.87)">
+  <component name="PublishConfigData" serverName="Remote SFTP(5.47)">
     <serverData>
-      <paths name="Remote SFTP(5.87)">
+      <paths name="Remote SFTP(5.47)">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/" local="$PROJECT_DIR$/../" web="/" />
           </mappings>
         </serverdata>
       </paths>

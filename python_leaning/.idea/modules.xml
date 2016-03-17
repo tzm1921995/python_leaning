@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/python_leaning.iml" filepath="$PROJECT_DIR$/python_leaning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/remotepython/remotepython.iml" filepath="$PROJECT_DIR$/remotepython/remotepython.iml" />
     </modules>
   </component>
 </project>
