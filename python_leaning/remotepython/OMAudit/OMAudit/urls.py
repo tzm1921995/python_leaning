@@ -1,4 +1,4 @@
-"""OMAuditweb URL Configuration
+"""OMAudit URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.8/topics/http/urls/
@@ -14,13 +14,11 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from django.conf.urls import *
+from webserver.views import *
 
 urlpatterns = [
+    url(r'^$', index),
+    url(r'omaudit_pull/$', omaudit_pull),
+    url(r'omaudit_run/$', omaudit_run),
     url(r'^admin/', include(admin.site.urls)),
 ]
-#urlpatterns = ['omaudit.views',
-#               (r'^$','index'),
-#               (r'omaudit_pull/$','omaudit_pull'),
-#               (r'omaudit_run/$','omaudit_run'),
-#               ]

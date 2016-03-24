@@ -2,13 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3657d70-c803-467d-830a-57007da9ae7b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remotepython/OMAudit/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remotepython/OMAudit/agent.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remotepython/OMAudit/config.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remotepython/re_exe2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remotepython/remote_exe.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/admin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/wsgi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/manage.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAudit/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAudit/agent.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAudit/config.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAuditweb/OMAuditweb/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAuditweb/OMAuditweb/admin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAuditweb/OMAuditweb/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAuditweb/OMAuditweb/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAuditweb/OMAuditweb/settings.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAuditweb/OMAuditweb/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAuditweb/OMAuditweb/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAuditweb/OMAuditweb/views.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAuditweb/OMAuditweb/wsgi.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAuditweb/db.sqlite3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAuditweb/manage.py" afterPath="" />
     </list>
     <ignored path="python_leaning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,23 +78,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/urls.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/webserver/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/OMAudit/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
               <folding>
-                <element signature="e#563#604#0" expanded="true" />
+                <element signature="e#560#601#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/models.py">
+        <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/webserver/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32628798">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.31843576">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -132,6 +160,10 @@
         <option value="$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/settings.py" />
         <option value="$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/models.py" />
         <option value="$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/urls.py" />
+        <option value="$PROJECT_DIR$/remotepython/OMAudit/OMAudit/urls.py" />
+        <option value="$PROJECT_DIR$/remotepython/OMAudit/OMAudit/settings.py" />
+        <option value="$PROJECT_DIR$/remotepython/OMAudit/webserver/views.py" />
+        <option value="$PROJECT_DIR$/remotepython/OMAudit/webserver/models.py" />
       </list>
     </option>
   </component>
@@ -246,7 +278,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="OMAuditweb" />
+              <option name="myItemId" value="webserver" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -268,11 +300,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="OMAuditweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OMAuditweb" />
+              <option name="myItemId" value="OMAudit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1041,12 +1069,12 @@
       <workItem from="1458115061642" duration="3696000" />
       <workItem from="1458177912521" duration="1019000" />
       <workItem from="1458193928104" duration="38689000" />
-      <workItem from="1458717905648" duration="7431000" />
+      <workItem from="1458717905648" duration="28557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75267000" />
+    <option name="totallyTimeSpent" value="96393000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1058,7 +1086,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1057" extended-state="1" />
+    <frame x="953" y="0" width="974" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1068,10 +1096,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14935064" sideWeight="0.49562362" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3318919" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14935064" sideWeight="0.49562362" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33116883" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4059081" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27899343" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298217" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1100,7 +1128,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1294,128 +1322,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/config.py">
+    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit.old/OMAuditweb/OMAuditweb/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1003963">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/agent.py">
+    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/OMAudit/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54821664">
-          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="96" column="13" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/OMAudit/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
           <folding>
-            <element signature="e#32#42#0" expanded="true" />
+            <element signature="e#560#601#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/migrations/__init__.py">
+    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/webserver/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/__init__.py">
+    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/webserver/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remotepython/OMAuditweb/OMAuditweb/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="e#563#604#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.025099074">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#563#604#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/OMAuditweb/OMAuditweb/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32628798">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.31843576">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding />
         </state>
       </provider>
