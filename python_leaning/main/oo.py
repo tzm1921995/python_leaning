@@ -12,6 +12,12 @@ class Hi(Hello):
     def sayHi(self):
         print ("Hi {0}".format(self._name))
 
+def name(request):
+    print(request.get)
+
+txt = "get http://www.jenkins.com"
+name(txt)
+
 h = Hello("tzm")
 h.sayHello()
 
