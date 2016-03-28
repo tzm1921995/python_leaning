@@ -4,6 +4,7 @@ from django.http import HttpResponse
 import MySQLdb
 import socket
 from webserver.models import *
+import time
 
 def index(request):
     return HttpResponse(u'welcome')
@@ -21,48 +22,40 @@ def intodb(id,ip,user,datetime,command):
         print "存入数据库失败"
     db.close()                      #关闭数据库连接
 
+def searchdb(string,time):
+    db =MySQLdb.connect(host="192.168.5.46",user="root",passwd="123456",db="test",charset="utf8")
+    cursor = db.cursor()    # 使用cursor()方法获取操作游标
+    time=str(time)
+    sql = "SELECT * from history where history_datetime>\'"+time+"\' ORDER BY history_datetime limit 100"
+    htmlstring = string + "<table>"
+    try:
+        cursor.execute(sql)            #执行sql语句
+        results = cursor.fetchall()     #获取所有记录列表
+        for row in results:
+            id = str(row[0])
+            ip = str(row[1])
+            user = str(row[2])
+            datetime = str(row[3])
+            command = str(row[4])
+            htmlstring += "<tr><td>"+id+"</td><td>"+ip+"</td><td>"+user+"</td><td>"+datetime+"</td><td>"+command+"</td></tr>"
 
-#def omaudit_run(request):
-#    if not 'LastID' in request.GET:
-#        LastID=""
-#    else:
-#        LastID=request.GET['LastID']
-#    if not 'hosts' in request.GET:
-#        Hosts=""
-#    else:
-#        Hosts=request.GET['hosts']
-#    ServerHistory_string=""
-#    host_array=str(Hosts).split(';')
+            #print id,ip,user,datetime,command
+        #htmlstring += "</table>"
+        return htmlstring
+    except:
+        db.rollback()
+        htmlstring = "search mysql filed"
+        return htmlstring
+    db.close()                           #关闭数据库连接
 
-#    if LastID=="0":
-#        if Hosts=="":
-#            ServerHistoryObj = ServerHistory.objects.order_by('-id')[:5]
-#        else:
-#            ServerHistoryObj = ServerHistory.objects.filter(history_ip__in=host_array).order_by('-id')[:5]
-
-#    else:
-#       if Hosts=="":
-#            print LastID
-#            ServerHistoryObj = ServerHistory.objects.filter(id__gt=LastID).order_by('-id')
-#        else:
-#            ServerHistoryObj = ServerHistory.objects.filter(id__gt=LastID,history_ip__in=host_array).order_by('-id')
-
-#    lastid=""
-#    i=0
-#    for e in ServerHistoryObj:
-#        if i==0:
-#            lastid=e.id
-#        ServerHistory_string+="<fcnt color=#cccccc>"+e.history_ip+"</font>&nbsp;&nbsp;\t"+e.history_user+"&nbsp;&nbsp;\t"+str(e.db_datetime)+"\t # <font color=#ffffff>"+e.history_command+"</font>*"
-#        i+=1
-
-#    ServerHistory_string+="@@"+str(lastid)
-#    return HttpResponse(ServerHistory_string)
 
 def omaudit_run(request):
-
-
-    ServerHistory_string="<fcnt color=#cccccc>"+request.history_id
-    return HttpResponse(ServerHistory_string)
+    T = time.strftime("%Y-%m-%d")
+    serverweb = "<form time=\"input\" method=\"get\">time:" \
+                "<input type=\"text\" id=\"T_1\"/>" \
+                "<input type=\"submit\" value=\"Submit\"/></form>"
+    serverstring=searchdb(serverweb,T)
+    return HttpResponse(serverstring)
 
 def omaudit_pull(request):
     if request.method == 'GET':
