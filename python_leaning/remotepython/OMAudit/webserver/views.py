@@ -5,6 +5,10 @@ import MySQLdb
 import socket
 from webserver.models import *
 import time
+from django.shortcuts import render_to_response
+
+
+T = time.strftime("%Y-%m-%d")
 
 def index(request):
     return HttpResponse(u'welcome')
@@ -22,11 +26,10 @@ def intodb(id,ip,user,datetime,command):
         print "存入数据库失败"
     db.close()                      #关闭数据库连接
 
-def searchdb(string,time):
+def searchdb(string):
     db =MySQLdb.connect(host="192.168.5.46",user="root",passwd="123456",db="test",charset="utf8")
     cursor = db.cursor()    # 使用cursor()方法获取操作游标
-    time=str(time)
-    sql = "SELECT * from history where history_datetime>\'"+time+"\' ORDER BY history_datetime limit 100"
+    sql = "SELECT * from history where history_datetime>\'"+T+"\' ORDER BY history_datetime limit 100"
     htmlstring = string + "<table>"
     try:
         cursor.execute(sql)            #执行sql语句
@@ -48,13 +51,26 @@ def searchdb(string,time):
         return htmlstring
     db.close()                           #关闭数据库连接
 
-
 def omaudit_run(request):
-    T = time.strftime("%Y-%m-%d")
-    serverweb = "<form time=\"input\" method=\"get\">time:" \
-                "<input type=\"text\" id=\"T_1\"/>" \
-                "<input type=\"submit\" value=\"Submit\"/></form>"
-    serverstring=searchdb(serverweb,T)
+    serverweb = """<html>
+<head>
+<script type="text/javascript">
+   function searchtime(){
+		T = document.getElementById("aa").value;
+		document.getElementById("testid").innerText = T;
+   }
+</script>
+</head>
+<body>
+<h1 id="testid">44</h1>
+<form time="input" id="formid" method="get">
+  input:
+  <input type="text" id="aa"/>
+  <input type="button" value="Submit" onclick="searchtime();"/>
+</form>
+</body>
+</html>"""
+    serverstring=searchdb(serverweb)
     return HttpResponse(serverstring)
 
 def omaudit_pull(request):
