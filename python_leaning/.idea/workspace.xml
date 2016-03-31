@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3657d70-c803-467d-830a-57007da9ae7b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remotepython/OMAudit/webserver/input.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAudit/webserver/search_time.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main/getjpt.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remotepython/OMAudit/webserver/input.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/remotepython/OMAudit/webserver/views.py" afterPath="$PROJECT_DIR$/remotepython/OMAudit/webserver/views.py" />
     </list>
@@ -39,8 +39,9 @@
     <SUITE FILE_PATH="coverage/python_leaning$views.coverage" NAME="views Coverage Results" MODIFIED="1458892772729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/remotepython/OMAudit/webserver" />
     <SUITE FILE_PATH="coverage/python_leaning$re_exe2.coverage" NAME="re_exe2 Coverage Results" MODIFIED="1458553877833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/remotepython" />
     <SUITE FILE_PATH="coverage/python_leaning$pyclamd.coverage" NAME="pyclamd Coverage Results" MODIFIED="1458293298213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/remotepython" />
-    <SUITE FILE_PATH="coverage/python_leaning$graph.coverage" NAME="graph Coverage Results" MODIFIED="1458207932601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/remotepython" />
+    <SUITE FILE_PATH="coverage/python_leaning$graph.coverage" NAME="graph Coverage Results" MODIFIED="1459343021361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/remotepython/interface" />
     <SUITE FILE_PATH="coverage/python_leaning$xlsx_writer.coverage" NAME="xlsx_writer Coverage Results" MODIFIED="1458197929834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
+    <SUITE FILE_PATH="coverage/python_leaning$getjpt.coverage" NAME="getjpt Coverage Results" MODIFIED="1459245607313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -57,14 +58,86 @@
     <favorites_list name="python_leaning" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/webserver/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.14860335">
+              <caret line="92" column="29" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
+              <folding>
+                <element signature="e#14#49#0" expanded="true" />
+                <marker date="1459393235003" expanded="true" signature="466:563" placeholder="INSERT INTO history... " />
+                <marker date="1459393235003" expanded="true" signature="466:568" placeholder="INSERT INTO history... " />
+                <marker date="1459393235003" expanded="true" signature="466:578" placeholder="INSERT INTO history... " />
+                <marker date="1459393235003" expanded="true" signature="466:580" placeholder="INSERT INTO history... " />
+                <marker date="1459393235003" expanded="true" signature="466:582" placeholder="INSERT INTO history... " />
+                <marker date="1459393235003" expanded="true" signature="466:584" placeholder="INSERT INTO history... " />
+                <marker date="1459393235003" expanded="true" signature="466:593" placeholder="INSERT INTO history... " />
+                <marker date="1459393235003" expanded="true" signature="466:595" placeholder="INSERT INTO history... " />
+                <marker date="1459393235003" expanded="true" signature="466:597" placeholder="INSERT INTO history... " />
+                <marker date="1459393235003" expanded="true" signature="466:599" placeholder="INSERT INTO history... " />
+                <marker date="1459393235003" expanded="true" signature="466:610" placeholder="INSERT INTO history... " />
+                <marker date="1459393235003" expanded="true" signature="466:612" placeholder="INSERT INTO history... " />
+                <marker date="1459393235003" expanded="true" signature="466:616" placeholder="INSERT INTO history... " />
+                <marker date="1459393235003" expanded="true" signature="466:633" placeholder="INSERT INTO history... " />
+                <marker date="1459393235003" expanded="true" signature="466:637" placeholder="INSERT INTO history... " />
+                <marker date="1459393235003" expanded="true" signature="466:651" placeholder="INSERT INTO history... " />
+                <marker date="1459393235003" expanded="true" signature="466:653" placeholder="INSERT INTO history... " />
+                <marker date="1459393235003" expanded="true" signature="466:654" placeholder="INSERT INTO history... " />
+                <marker date="1459393235003" expanded="true" signature="1070:1115" placeholder="SELECT * fro... history" />
+                <marker date="1459393235003" expanded="true" signature="1070:1117" placeholder="SELECT * fro... history" />
+                <marker date="1459393235003" expanded="true" signature="1070:1160" placeholder="select * fro... history" />
+                <marker date="1459393235003" expanded="true" signature="2079:2166" placeholder="SELECT * fro... history" />
+                <marker date="1459393235003" expanded="true" signature="2079:2178" placeholder="SELECT * fro... history" />
+                <marker date="1459393235003" expanded="true" signature="2079:2203" placeholder="SELECT * fro... history" />
+                <marker date="1459393235003" expanded="true" signature="2079:2207" placeholder="SELECT * fro... history" />
+                <marker date="1459393235003" expanded="true" signature="2079:2222" placeholder="SELECT * fro... history" />
+                <marker date="1459393235003" expanded="true" signature="2079:2247" placeholder="SELECT * fro... history" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getjpt.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/getjpt.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/OMAudit/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/webserver/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -118,6 +191,7 @@
         <option value="$PROJECT_DIR$/remotepython/OMAudit/search.html" />
         <option value="$PROJECT_DIR$/remotepython/OMAudit/webserver/search.html" />
         <option value="$PROJECT_DIR$/remotepython/OMAudit/webserver/result.html" />
+        <option value="$PROJECT_DIR$/main/getjpt.py" />
         <option value="$PROJECT_DIR$/remotepython/OMAudit/webserver/views.py" />
       </list>
     </option>
@@ -198,6 +272,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python_leaning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python_leaning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="remotepython" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OMAudit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python_leaning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python_leaning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -225,43 +331,7 @@
       <recent name="E:\shell\python\python_leaning\python_leaning\remotepython\interface" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.oo">
-    <configuration default="false" name="pyclamd" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/remotepython" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="remotepython" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/remotepython/pyclamd.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="remote_exe" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/remotepython" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="remotepython" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/remotepython/remote_exe.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.graph">
     <configuration default="false" name="traceroute" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -312,6 +382,42 @@
       <module name="python_leaning" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/oo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="getjpt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python_leaning" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/getjpt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="graph" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/remotepython/interface" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="remotepython" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/remotepython/interface/graph.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -934,19 +1040,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.re_exe2" />
-      <item index="1" class="java.lang.String" itemvalue="Python.pyclamd" />
-      <item index="2" class="java.lang.String" itemvalue="Python.remote_exe" />
-      <item index="3" class="java.lang.String" itemvalue="Python.traceroute" />
-      <item index="4" class="java.lang.String" itemvalue="Python.views" />
-      <item index="5" class="java.lang.String" itemvalue="Python.oo" />
+      <item index="1" class="java.lang.String" itemvalue="Python.traceroute" />
+      <item index="2" class="java.lang.String" itemvalue="Python.views" />
+      <item index="3" class="java.lang.String" itemvalue="Python.oo" />
+      <item index="4" class="java.lang.String" itemvalue="Python.getjpt" />
+      <item index="5" class="java.lang.String" itemvalue="Python.graph" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.oo" />
-        <item index="1" class="java.lang.String" itemvalue="Python.views" />
-        <item index="2" class="java.lang.String" itemvalue="Python.traceroute" />
-        <item index="3" class="java.lang.String" itemvalue="Python.remote_exe" />
-        <item index="4" class="java.lang.String" itemvalue="Python.pyclamd" />
+        <item index="0" class="java.lang.String" itemvalue="Python.graph" />
+        <item index="1" class="java.lang.String" itemvalue="Python.getjpt" />
+        <item index="2" class="java.lang.String" itemvalue="Python.oo" />
+        <item index="3" class="java.lang.String" itemvalue="Python.views" />
+        <item index="4" class="java.lang.String" itemvalue="Python.traceroute" />
       </list>
     </recent_temporary>
   </component>
@@ -967,12 +1073,12 @@
       <workItem from="1458193928104" duration="38689000" />
       <workItem from="1458717905648" duration="29968000" />
       <workItem from="1458820962408" duration="13953000" />
-      <workItem from="1459134835666" duration="23406000" />
+      <workItem from="1459134835666" duration="40637000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135163000" />
+    <option name="totallyTimeSpent" value="152394000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -989,12 +1095,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32683983" sideWeight="0.50437635" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2636656" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14919356" sideWeight="0.49562362" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27759916" sideWeight="0.49562362" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33116883" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27899343" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1005,7 +1112,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1041,27 +1147,33 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#14#49#0" expanded="true" />
-            <marker date="1459234095028" expanded="true" signature="497:594" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:599" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:609" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:611" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:613" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:615" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:624" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:626" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:628" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:630" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:641" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:643" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:647" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:664" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:668" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:682" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:684" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:685" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="1099:1144" placeholder="SELECT * fro... history" />
-            <marker date="1459234095028" expanded="true" signature="1099:1146" placeholder="SELECT * fro... history" />
-            <marker date="1459234095028" expanded="true" signature="1099:1189" placeholder="select * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="466:563" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:568" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:578" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:580" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:582" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:584" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:593" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:595" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:597" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:599" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:610" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:612" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:616" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:633" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:637" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:651" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:653" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:654" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="1070:1115" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="1070:1117" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="1070:1160" placeholder="select * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="2079:2166" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="2079:2178" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="2079:2203" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="2079:2207" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="2079:2222" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="2079:2247" placeholder="SELECT * fro... history" />
           </folding>
         </state>
       </provider>
@@ -1098,27 +1210,33 @@
           <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
           <folding>
             <element signature="e#14#49#0" expanded="true" />
-            <marker date="1459234095028" expanded="true" signature="497:594" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:599" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:609" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:611" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:613" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:615" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:624" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:626" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:628" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:630" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:641" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:643" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:647" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:664" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:668" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:682" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:684" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:685" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="1099:1144" placeholder="SELECT * fro... history" />
-            <marker date="1459234095028" expanded="true" signature="1099:1146" placeholder="SELECT * fro... history" />
-            <marker date="1459234095028" expanded="true" signature="1099:1189" placeholder="select * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="466:563" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:568" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:578" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:580" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:582" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:584" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:593" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:595" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:597" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:599" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:610" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:612" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:616" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:633" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:637" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:651" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:653" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:654" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="1070:1115" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="1070:1117" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="1070:1160" placeholder="select * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="2079:2166" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="2079:2178" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="2079:2203" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="2079:2207" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="2079:2222" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="2079:2247" placeholder="SELECT * fro... history" />
           </folding>
         </state>
       </provider>
@@ -1339,67 +1457,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/webserver/result.html">
+    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/webserver/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.75">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/OMAudit/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44581005">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/getjpt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
           <folding>
-            <element signature="e#560#601#0" expanded="false" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/webserver/input.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06368715">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/webserver/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.464286">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/remotepython/OMAudit/webserver/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8703911">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.14860335">
+          <caret line="92" column="29" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
           <folding>
             <element signature="e#14#49#0" expanded="true" />
-            <marker date="1459234095028" expanded="true" signature="497:594" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:599" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:609" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:611" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:613" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:615" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:624" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:626" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:628" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:630" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:641" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:643" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:647" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:664" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:668" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:682" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:684" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="497:685" placeholder="INSERT INTO history... " />
-            <marker date="1459234095028" expanded="true" signature="1099:1144" placeholder="SELECT * fro... history" />
-            <marker date="1459234095028" expanded="true" signature="1099:1146" placeholder="SELECT * fro... history" />
-            <marker date="1459234095028" expanded="true" signature="1099:1189" placeholder="select * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="466:563" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:568" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:578" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:580" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:582" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:584" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:593" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:595" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:597" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:599" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:610" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:612" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:616" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:633" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:637" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:651" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:653" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="466:654" placeholder="INSERT INTO history... " />
+            <marker date="1459393235003" expanded="true" signature="1070:1115" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="1070:1117" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="1070:1160" placeholder="select * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="2079:2166" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="2079:2178" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="2079:2203" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="2079:2207" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="2079:2222" placeholder="SELECT * fro... history" />
+            <marker date="1459393235003" expanded="true" signature="2079:2247" placeholder="SELECT * fro... history" />
           </folding>
         </state>
       </provider>

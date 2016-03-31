@@ -8,8 +8,6 @@ import time
 from django.shortcuts import render_to_response
 
 
-T = time.strftime("%Y-%m-%d")
-
 def index(request):
     return HttpResponse(u'welcome')
 
@@ -26,7 +24,7 @@ def intodb(id,ip,user,datetime,command):
         print "存入数据库失败"
     db.close()                      #关闭数据库连接
 
-def searchdb(string):
+def searchdb(string,T):
     db =MySQLdb.connect(host="192.168.5.46",user="root",passwd="123456",db="test",charset="utf8")
     cursor = db.cursor()    # 使用cursor()方法获取操作游标
     sql = "SELECT * from history where history_datetime>\'"+T+"\' ORDER BY history_datetime limit 100"
@@ -51,26 +49,61 @@ def searchdb(string):
         return htmlstring
     db.close()                           #关闭数据库连接
 
+def searchmysql(string,host,Time,command):
+    db =MySQLdb.connect(host="192.168.5.46",user="root",passwd="123456",db="test",charset="utf8")
+    cursor = db.cursor()    # 使用cursor()方法获取操作游标
+    sql = "SELECT * from history where history_datetime like \'%"+Time+"%\' and history_ip like \'%"+host+"%\' and history_command like  \'%"+command+"%\'ORDER BY history_datetime  "
+    htmlstring = string + "<table><tr><td>ID</td><td>HOST</td><td>USER</td><td>TIME</td><td>COMMAND</td></tr>"
+    try:
+        cursor.execute(sql)            #执行sql语句
+        results = cursor.fetchall()     #获取所有记录列表
+        for row in results:
+            id = str(row[0])
+            ip = str(row[1])
+            user = str(row[2])
+            datetime = str(row[3])
+            command = str(row[4])
+            htmlstring += "<tr><td>"+id+"</td><td>"+ip+"</td><td>"+user+"</td><td>"+datetime+"</td><td>"+command+"</td></tr>"
+
+            #print id,ip,user,datetime,command
+        #htmlstring += "</table>"
+        return htmlstring
+    except:
+        db.rollback()
+        htmlstring = "search mysql filed"
+        return htmlstring
+    db.close()                           #关闭数据库连接
+
 def omaudit_run(request):
+    T = time.strftime("%Y-%m-%d")
+    host = request.GET.get('T_0', 'default value')
+    Time = request.GET.get('T_1', 'default value')
+    cmd = request.GET.get('T_2', 'default value')
     serverweb = """<html>
 <head>
 <script type="text/javascript">
    function searchtime(){
-		T = document.getElementById("aa").value;
-		document.getElementById("testid").innerText = T;
+		val = document.getElementById("aa").value;
+		document.getElementById("testid").innerText = val;
+		return true;
    }
 </script>
 </head>
 <body>
-<h1 id="testid">44</h1>
-<form time="input" id="formid" method="get">
-  input:
-  <input type="text" id="aa"/>
-  <input type="button" value="Submit" onclick="searchtime();"/>
+<h1 id="testid">请输入查询条件：</h1>
+<form id="formid" action="" method="get">
+  Host:
+  <input type="text" id="T_0" name="T_0"/>
+   Time :
+  <input type="text" id="T_1" name="T_1"/>
+    Command:
+  <input type="text" id="T_2" name="T_2"/>
+  <input type="submit" value="Submit" onclick="searchtime();"/>
 </form>
 </body>
 </html>"""
-    serverstring=searchdb(serverweb)
+#    serverstring=searchdb(serverweb,Time)
+    serverstring=searchmysql(serverweb,host,Time,cmd)
     return HttpResponse(serverstring)
 
 def omaudit_pull(request):
